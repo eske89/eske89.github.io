@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Erzsebet Kis-Nagy Artist</title>
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    @@include('./partials/header.html')
+    <main>
+        <div style="display: flex">
+            <div style="flex: 1 1 0">
+                    <div class="contactline"><img class="contacticon" src="email.svg" alt="">
+                    <a href="mailto:erzsebet@kis-nagy.art" class="contact">erzsebet@kis-nagy.art</a></div>
+                    <div class="contactline"><img class="contacticon" src="instagram2.svg" alt="">
+                    <a href="https://www.instagram.com/kisnagy_art/"  target="_blank" class="contact">instagram.com/kisnagy_art</a></div>
+                    <div class="contactline"><img class="contacticon" src="twitter2.svg" alt="">
+                    <a href="https://twitter.com/kisnagy_art" target="_blank" class="contact">twitter.com/kisnagy_art</a></div>                
+            </div>
+            <div class="tweets" style="flex: 1 1 0; max-height: calc(100vh - 160px); overflow-y: scroll">
+                <a class="twitter-timeline" href="https://twitter.com/kisnagy_art?ref_src=twsrc%5Etfw">Tweets by kisnagy_art</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>     
+        </div>
+    </main>
+    @@include('./partials/footer.html')
+</body>
+</html>

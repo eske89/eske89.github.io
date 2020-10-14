@@ -34,22 +34,18 @@ main {
 
 .menu {
    text-transform: uppercase;
-   padding-left: 15px;
-   padding-right: 15px;
+   margin-left: 15px;
+   margin-right: 15px;
    font-size: 18px;
    font-family: 'Enriqueta', serif;
    font-weight: 400;
    color: white;
-   margin: 0px;
    text-decoration: none;
 }
 
 #instagram, #twitter {
     width: 25px;
     margin: 10px;
-}
-
-#instagram {
     padding-top: 3px;
 }
 
@@ -160,13 +156,144 @@ p {
     margin: 0px;
 }
 
+img {
+    max-width: 100%;
+}
+
 #line2 {
     position: absolute;
     display: block;
     height: 5px;
-    width: 100%;
+    width: 90%%;
     bottom: 50px;
     left: 0;
     right: 0;
     background-color: black;
+}
+
+#drawings {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 5px;
+}
+
+.pic img  {
+    width: 100%;
+}
+
+.pic {
+    margin: 0px auto 10px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    margin: 0px auto 0px;
+    font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+h4 {
+    padding-bottom: 30px;
+    margin: 0px auto 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#paintings {
+    margin: 30px;
+}
+
+.paintings {
+    display: flex;
+    flex-direction: row;
+}
+
+#box1 {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+
+#paint1 {
+    width: 62%;
+}
+
+#paint2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+#paint2 .painting {
+    flex: 1 1 0;
+}
+
+#paint3b, #paint3c, #paint4b {
+    padding-left: 30px;
+}
+
+#paint3a {
+    flex: 379 379 0;
+}
+ 
+#paint3b {
+    flex: 334 334 0;
+}
+
+#paint3c {
+    flex: 348 348 0;
+}
+
+#paint3 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+ #paint4 {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+
+#paint4a {
+    flex: 268 268 0;
+}
+ 
+#paint4b {
+    flex: 304 304 0;
+}
+
+.contact {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    padding: 0px;
+    font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.contacticon {
+    width: 40px;
+    margin-left: 40px;
+    margin-top: 54px;
+
+}
+
+.contactline {
+    display: flex;
+    align-items: center;
+}
+
+.tweets {
+    padding-top: 40px;
+    padding-right: 40px;
 }
