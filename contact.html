@@ -2,25 +2,28 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Erzsebet Kis-Nagy Artist</title>
+  <title>Contact info of artist Erzsebet Kis-Nagy</title>
+  <meta  name="description" content="Contact information of artist Erzsebet Kis-Nagy, listing her email address, her Twitter and Instagram accounts.">
   <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 </head>
 <body>
     @@include('./partials/header.html')
     <main>
-        <div style="display: flex">
-            <div style="flex: 1 1 0">
-                    <div class="contactline"><img class="contacticon" src="email.svg" alt="">
+        <div id="contact">
+            <div class="contact-lines">
+                    <div class="contactline"><img class="contacticon" src="email.svg" alt="e-mail">
                     <a href="mailto:erzsebet@kis-nagy.art" class="contact">erzsebet@kis-nagy.art</a></div>
-                    <div class="contactline"><img class="contacticon" src="instagram2.svg" alt="">
+                    <div class="contactline"><img class="contacticon" src="instagram2.svg" alt="instagram">
                     <a href="https://www.instagram.com/kisnagy_art/"  target="_blank" class="contact">instagram.com/kisnagy_art</a></div>
-                    <div class="contactline"><img class="contacticon" src="twitter2.svg" alt="">
+                    <div class="contactline"><img class="contacticon" src="twitter2.svg" alt="twitter">
                     <a href="https://twitter.com/kisnagy_art" target="_blank" class="contact">twitter.com/kisnagy_art</a></div>                
             </div>
-            <div class="tweets" style="flex: 1 1 0; max-height: calc(100vh - 160px); overflow-y: scroll">
+            <div class="tweets">
                 <a class="twitter-timeline" href="https://twitter.com/kisnagy_art?ref_src=twsrc%5Etfw">Tweets by kisnagy_art</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>     
         </div>
