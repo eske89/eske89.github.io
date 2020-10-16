@@ -2,84 +2,78 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - My first website</title>
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Josefin+Sans:wght@300&family=Merriweather:ital@1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
+  <title>Erzsebet Kis-Nagy artist's home page, artist statement and list of exhibitions</title>
+  <meta name="description" content="Erzsebet Kis-Nagy artist's webpage showcases her drawings and paintings. Her contact details, artist statement and a list of selected exhibitions can also be found here.">
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<header>
-  <div id="title"><h1><small>Hi, My name is</small><br>Anakin Skywalker</h1></div>
-</header>
-<main>
-  <section id="first">
-    <p>
-    <strong>Analytical, goal oriented leader</strong> with proven track record in management and enforcement Space Fleet Operations or Frontend Development. Wide range of hands-on experience, including:</p>
-    <ul>
-      <li>Large scale construction projects oversight</li>
-      <li>Advanced forms of mind control</li>
-      <li>Planetary scale demolitions operations</li>
-      <li>Fugitive recovery services</li>
-    </ul>
-    <div class="quotebox"><blockquote>Together we can rule the galaxy</blockquote></div> 
-  </section>
-  <section>
-    <h2>Notable achievements</h2>
-    <h3>Designed, built and piloted a custom pod racer. 32 BBY Boonta Eve Classic Race Champion</h3>
-    <p>In my spare time at Wald’s Parts junk shop I designed and built a Class III open cockpit Podracer capable of 588 mph top speed. Went on to win the Boonta Eve Classic race in 32 BBY - first ever win by a human. Generated documented company revenue of over 59 wupiupi during the course of my enslavement.</p>
-    <h3>Oversight of DS1 and DS2 Orbital Battle Stations construction projects</h3>
-    <p>During my tenure as a Supreme Imperial Fleet Commander I was in charge of large capital construction projects for the Deep Space Fleet. Performed acceptance testing of the DS1 SuperLaser in 0 BBY by annihilating Alderaan - a terrestrial class planet in the Core Worlds region. Successfully tripled the deep space fire power of the imperial fleet in accordance with the Tarkin Doctrine before losing both projects to run-away photon torpedoes.</p>
-    <div class="quotebox"><blockquote>I find your lack of faith disturbing.</blockquote></div>
-  </section>
-  <section>
-    <h2>Experience</h2>
-    <h3>Sith Empire Headquarters, Dromund Kaas</h3>
-    <h4>Supreme Commander of Imperial Forces, Emperor’s Enforcer</h4>
-    <ul>
-      <li>As the right-hand man to Emperor Sidious, hunted down jedi survivors and enforced the will of the empire;</li>
-      <li>Oversaw construction of the first generation Death Star;</li>
-      <li>First ever Imperial Supreme Commander;</li></li>
-    </ul>
-    <h3>Wally’s Parts / Toyarian Watto junk shop, Mos Espa, Tatooine</h3>
-    <h4>Enslaved Volunteer</h4>
-    <ul>
-        <li>General help and front-desk retail operations at the junk shop, second hand droid parts, mechanical / droid repair services;</li>
-        <li>Designed and piloted custom-built Podracer, ran track-side operations for the podracing team;</li>
-    </ul>
-    <div class="quotebox"><blockquote>When I left you, I was but the learner; now I am the master..</blockquote></div>
-  </section>
-  <section>
-    <h2>Formal training</h2>
-    <h3>Green Fox Academy, Earth</h3>
-    <h4>Full stack developer</h4>
-    <ul>
-        <li>Padawan to Knight Tojas;</li>
-        <li>Learned programming with a specialisation in JavaScript and Front-end technologies</li>
-    </ul>
-    <h3>Sith Empire, Coruscant</h3>
-    <h4>Master of the Dark Side of the Force</h4>
-    <ul>
-        <li>Apprentice to Sith Lord Darth Sidious;</li>
-    </ul>
-    <h3>Jedi Order Academy, Coruscant</h3>
-    <h4>Master of Jedi Force</h4>
-    <ul>
-        <li>Padawan to Knight Obi Wan Kenobi. Bodyguard to Senator Padme Amidala during the Clone Wars of 22 BBY;</li>
-        <li>Graduated with donors;</li>
-    </ul>
-  </section>
-  <div id="line"></div>
-  <section>
-    <h2>Personal interests</h2>
-    <ul id="bottom">
-        <li>Midi-Chlorian research as a hobby;</li>
-        <li>Recreational mind-control techniques;</li>
-        <li>Amateur and local club podracing.</li>
-    </ul>
-  </section>
-</main>
-<!-- partial -->
-  
+    <header>
+    <div id="title"><h1>Erzsebet Kis-Nagy</h1></div>
+    <div id="navbar">
+            <section class="menu-items">
+                <a href="index.html" class="menu">Home</a>
+                <a href="index.html#about" class="menu">About</a>
+                <a href="drawings.html" class="menu">Drawings</a>
+                <a href="paintings.html" class="menu">Paintings</a>
+                <a href="contact.html" class="menu">Contact</a>            
+            </section>
+            <a href="https://www.instagram.com/kisnagy_art/" target="_blank"><img id="instagram" src="instagram.svg" alt="instagram"></a>
+            <a href="https://twitter.com/kisnagy_art" target="_blank" ><img id="twitter" src="twitter.svg" alt="twitter"></a>
+            <a href="javascript:toggleMenu()" class="burgermenu"><div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div></a>
+    </div>
+    <div id="line"></div>
+    <script>
+            function toggleMenu() {
+                document.querySelector('.menu-items').classList.toggle('open');
+            }
+    </script>
+  </header>
+
+    <main>
+<section>
+        <div class="pic"><img src="erzsebet_kis-nagy_-_south_stack_lighthouse.jpg" alt="South Stack Lighthouse drawing"></div>
+</section>
+<section id="about">
+
+    <div id="statement"><h2>Statement</h2>
+    <p class="statementtext">Erzsebet Kis-Nagy is an emerging artist, living in Budapest, Hungary. The sources of inspiration to her drawings and paintings are mainly landscapes, cityscapes and nature.</p><p class="statementtext">Her recent cylindrical drawings try to capture the perpetual quality of certain places. Her aim with this project is also to propose an eco-friendly way of creating art by reusing household waste as a surface to draw or paint on. These drawings have been selected for exhibitions like Derwent Art Prize and Wales Contemporary in 2020.</p><p class="statementtext">In her paintings, she tries to share her experience of calm and beauty in the places she visits with an emphasis on landscapes, flora and architecture.</p></div>
+    <div id="self"><img src="erzsebet_kis-nagy.jpg" alt="Erzsebet Kis-Nagy portrait"></div>
+</section>
+<section>
+    <h2 id="exhibitionsh2">Selected exhibitions</h2>
+    <table>
+        <tr>
+            <td>2021</td>
+            <td class="td2">WALES CONTEMPORARY, Oxo Tower Gallery, London</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td class="td2">WALES CONTEMPORARY, Waterfront Gallery, Milford Haven, Wales</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td class="td2">TALP OPEN ART COMPETITION, virtual exhibition</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td class="td2">DERWENT ART PRIZE, Oxo Tower Gallery, London and 20 rue Saint Claude, Paris, France (postponed)</td>
+        </tr>
+        <tr>
+            <td>2019</td>
+            <td class="td2">ZSILIP ART CENTER Flora & Fauna, Budapest, Hungary</td>
+        </tr>
+    </table>
+</section>
+    </main>
+    <footer>
+    <div id="line2"></div>
+    <div><p id="copyright">© 2020 Erzsebet Kis-Nagy</p></div>
+</footer>
 </body>
 </html>

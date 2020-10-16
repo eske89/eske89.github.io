@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contact info of artist Erzsebet Kis-Nagy</title>
+  <meta  name="description" content="Contact information of artist Erzsebet Kis-Nagy, listing her email address, her Twitter and Instagram accounts.">
+  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+    <header>
+    <div id="title"><h1>Erzsebet Kis-Nagy</h1></div>
+    <div id="navbar">
+            <section class="menu-items">
+                <a href="index.html" class="menu">Home</a>
+                <a href="index.html#about" class="menu">About</a>
+                <a href="drawings.html" class="menu">Drawings</a>
+                <a href="paintings.html" class="menu">Paintings</a>
+                <a href="contact.html" class="menu">Contact</a>            
+            </section>
+            <a href="https://www.instagram.com/kisnagy_art/" target="_blank"><img id="instagram" src="instagram.svg" alt="instagram"></a>
+            <a href="https://twitter.com/kisnagy_art" target="_blank" ><img id="twitter" src="twitter.svg" alt="twitter"></a>
+            <a href="javascript:toggleMenu()" class="burgermenu"><div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div></a>
+    </div>
+    <div id="line"></div>
+    <script>
+            function toggleMenu() {
+                document.querySelector('.menu-items').classList.toggle('open');
+            }
+    </script>
+  </header>
+
+    <main>
+        <div id="contact">
+            <div class="contact-lines">
+                    <div class="contactline"><img class="contacticon" src="email.svg" alt="e-mail">
+                    <a href="mailto:erzsebet@kis-nagy.art" class="contact">erzsebet@kis-nagy.art</a></div>
+                    <div class="contactline"><img class="contacticon" src="instagram2.svg" alt="instagram">
+                    <a href="https://www.instagram.com/kisnagy_art/"  target="_blank" class="contact">instagram.com/kisnagy_art</a></div>
+                    <div class="contactline"><img class="contacticon" src="twitter2.svg" alt="twitter">
+                    <a href="https://twitter.com/kisnagy_art" target="_blank" class="contact">twitter.com/kisnagy_art</a></div>                
+            </div>
+            <div class="tweets">
+                <a class="twitter-timeline" href="https://twitter.com/kisnagy_art?ref_src=twsrc%5Etfw">Tweets by kisnagy_art</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>     
+        </div>
+    </main>
+    <footer>
+    <div id="line2"></div>
+    <div><p id="copyright">© 2020 Erzsebet Kis-Nagy</p></div>
+</footer>
+</body>
+</html>

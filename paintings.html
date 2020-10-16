@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Paintings of artist Erzsebet Kis-Nagy</title>
+    <meta  name="description" content="A selection of paintings created by artist Erzsebet Kis-Nagy, including a majority of oil and acrylic paintings.">
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <header>
+    <div id="title"><h1>Erzsebet Kis-Nagy</h1></div>
+    <div id="navbar">
+            <section class="menu-items">
+                <a href="index.html" class="menu">Home</a>
+                <a href="index.html#about" class="menu">About</a>
+                <a href="drawings.html" class="menu">Drawings</a>
+                <a href="paintings.html" class="menu">Paintings</a>
+                <a href="contact.html" class="menu">Contact</a>            
+            </section>
+            <a href="https://www.instagram.com/kisnagy_art/" target="_blank"><img id="instagram" src="instagram.svg" alt="instagram"></a>
+            <a href="https://twitter.com/kisnagy_art" target="_blank" ><img id="twitter" src="twitter.svg" alt="twitter"></a>
+            <a href="javascript:toggleMenu()" class="burgermenu"><div class="burger"></div>
+                        <div class="burger"></div>
+                        <div class="burger"></div></a>
+    </div>
+    <div id="line"></div>
+    <script>
+            function toggleMenu() {
+                document.querySelector('.menu-items').classList.toggle('open');
+            }
+    </script>
+  </header>
+
+    <main id="paintings">
+        <section id="box1" class="paintings">
+            <div id="paint1"><img class="painting" src="erzsebet_kis-nagy_-_urban_sunset.jpg" alt="Urban Sunset painting"></div>
+            <div id="paint2">
+                <div><img class="painting" src="erzsebet_kis-nagy_-_meadow.jpg" alt="Meadow painting"></div>
+                <div><img class="painting" src="erzsebet_kis-nagy_-_many_faces_of_milan.jpg" alt="Many Faces of Milan painting"></div>
+                <div><img class="painting" src="erzsebet_kis-nagy_-_dads_fishing_spot.jpg" alt="Dad's Fishing Spot painting"></div>
+            </div>
+        </section>
+        <section id="paint3" class="paintings">
+            <div id="paint3a"><img class="painting" src="erzsebet_kis-nagy_-_stanley_park.jpg" alt="Stanley park painting"></div>
+            <div id="paint3b"><img class="painting" src="erzsebet_kis-nagy_-_friends_at_the_pier.jpg" alt="Friends at the Pier painting"></div>
+            <div id="paint3c"><img class="painting" src="erzsebet_kis-nagy_-_climbing.jpg" alt="Climbing painting"></div>
+        </section>
+        <section id="paint4" class="paintings">
+            <div id="paint4a"><img class="painting" src="erzsebet_kis-nagy_-_warsaw_cityscape.jpg" alt="Warsaw Cityscape painting"></div>
+            <div id="paint4b"><img class="painting" src="erzsebet_kis-nagy_-_family_pets.jpg" alt="Family Pets painting"></div>
+        </section>
+    </main>
+    <footer>
+    <div id="line2"></div>
+    <div><p id="copyright">© 2020 Erzsebet Kis-Nagy</p></div>
+</footer>
+</body>
+
+</html>
