@@ -6,9 +6,6 @@ header {
     background-color: rgb(54, 53, 50);
     width: 100%;
     padding: 30px 20px 30px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,6 +13,9 @@ header {
     z-index: 1;
 }
 
+#title {
+    max-width: 50%;
+}
 
 @media only screen and (max-width: 450px) {
     header {
@@ -34,9 +34,15 @@ header {
     background-color: black;
 }
 
+@media only screen and (max-width: 700px) {
+    #line {
+      top: 147px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     #line {
-      top: 90px;
+      top: 127px;
     }
 }
 
@@ -64,59 +70,42 @@ main {
     }
 }
 
-@media only screen and (max-width: 800px) {
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#icons {
+    flex-shrink: 0;
+}
+
+.menu-items {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
     .menu {
         font-size: 12px;
         margin-left: 10px;
         margin-right: 10px;
     }
-}
 
-@media only screen and (max-width: 700px) {
+    #navbar {
+        flex-wrap: wrap;
+    }
+    
     .menu-items {
-        display: none;
-    }
-
-    .menu-items.open {
-        position: absolute;
-        display: block;
-        z-index: 0;
-        top: 70px;
-        right: -20px;
-        width: 200px;
-        background-color: rgb(54, 53, 50);
-        padding: 30px 20px 30px 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menu {
-        font-size: 18px;
-        padding: 20px;
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        padding-top: 20px;
     }
 }
 
-@media only screen and (min-width: 700px) {
-    .burgermenu {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .burgermenu {
-        display: block;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .burger {
-            width: 25px;
-            height: 2px;
-            background-color: white;
-            margin: 6px 10px;
-    }
-}
 
 #instagram, #twitter {
     width: 25px;
@@ -124,11 +113,25 @@ main {
     padding-top: 3px;
 }
 
-#navbar {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    position: relative;
+
+@media only screen and (min-width: 700px) {
+    #contactheader {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #contactheader {
+        width: 25px;
+        margin: 10px 0px 10px 10px;
+        padding-top: 3px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #aboutnavbar, #contactnavbar {
+        display: none;
+    }
 }
 
 h1 {
@@ -311,9 +314,15 @@ body {
     margin: 0px;
 }
 
+@media only screen and (max-width: 700px) {
+    body {
+        padding-top: 150px;
+    }
+}
+
 @media only screen and (max-width: 450px) {
     body {
-        padding-top: 90px;
+        padding-top: 130px;
     }
 }
 
