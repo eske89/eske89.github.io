@@ -13,6 +13,10 @@ header {
     z-index: 1;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
+
 #title {
     max-width: 50%;
 }
