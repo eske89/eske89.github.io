@@ -68,9 +68,12 @@
     <div><p id="copyright">© 2020 Erzsebet Kis-Nagy</p></div>
 </footer>
     <script src="fslightbox.js"></script>
-    <script>
-        fsLightboxInstances["gallery"].props.disableThumbs = true;
-    </script>
+<script>
+    fsLightboxInstances["gallery"].props.disableThumbs = true;
+    fsLightboxInstances['gallery'].props.exitFullscreenOnClose = true;
+    fsLightboxInstances['gallery'].props.slideshowTime = 3000;
+    fsLightboxInstances['gallery'].props.zoomIncrement = 0.5;
+</script>
 </body>
 
 </html>
