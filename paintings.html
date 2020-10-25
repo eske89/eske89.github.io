@@ -44,21 +44,23 @@
 
     <main id="paintings">
         <section id="box1" class="paintings">
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_urban_sunset.jpg" id="paint1"><img class="painting" src="erzsebet_kis-nagy_-_urban_sunset.jpg" alt="Urban Sunset painting"></a>
+            <a data-fslightbox="gallery"
+            data-caption="&lt;h2&gt;Urban Sunset&lt;/h2&gt;&lt;p&gt;Oil on paper, 2020.&lt;/p&gt;"
+            href="erzsebet_kis-nagy_-_urban_sunset.jpg" id="paint1"><img class="painting" src="erzsebet_kis-nagy_-_urban_sunset.jpg" alt="Urban Sunset painting"></a>
             <div id="paint2">
-                <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_meadow.jpg"><img class="painting" src="erzsebet_kis-nagy_-_meadow.jpg" alt="Meadow painting"></a>
-                <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_many_faces_of_milan.jpg"><img class="painting" src="erzsebet_kis-nagy_-_many_faces_of_milan.jpg" alt="Many Faces of Milan painting"></a>
-                <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_dads_fishing_spot.jpg"><img class="painting" src="erzsebet_kis-nagy_-_dads_fishing_spot.jpg" alt="Dad's Fishing Spot painting"></a>
+                <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Meadow&lt;/h2&gt;&lt;p&gt;Acrylics on paper, 2019.&lt;/p&gt;" href="erzsebet_kis-nagy_-_meadow.jpg"><img class="painting" src="erzsebet_kis-nagy_-_meadow.jpg" alt="Meadow painting"></a>
+                <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Many Faces of Milan&lt;/h2&gt;&lt;p&gt;Oil on canvas, 2019.&lt;/p&gt;" href="erzsebet_kis-nagy_-_many_faces_of_milan.jpg"><img class="painting" src="erzsebet_kis-nagy_-_many_faces_of_milan.jpg" alt="Many Faces of Milan painting"></a>
+                <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Dad's Fishing Spot&lt;/h2&gt;&lt;p&gt;Oil on paper, 2018.&lt;/p&gt;" href="erzsebet_kis-nagy_-_dads_fishing_spot.jpg"><img class="painting" src="erzsebet_kis-nagy_-_dads_fishing_spot.jpg" alt="Dad's Fishing Spot painting"></a>
             </div>
         </section>
         <section id="paint3" class="paintings">
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_stanley_park.jpg" id="paint3a"><img class="painting" src="erzsebet_kis-nagy_-_stanley_park.jpg" alt="Stanley park painting"></a>
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_friends_at_the_pier.jpg" id="paint3b"><img class="painting" src="erzsebet_kis-nagy_-_friends_at_the_pier.jpg" alt="Friends at the Pier painting"></a>
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_climbing.jpg" id="paint3c"><img class="painting" src="erzsebet_kis-nagy_-_climbing.jpg" alt="Climbing painting"></a>
+            <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Stanley Park&lt;/h2&gt;&lt;p&gt;Oil on paper, 2018.&lt;/p&gt;" href="erzsebet_kis-nagy_-_stanley_park.jpg" id="paint3a"><img class="painting" src="erzsebet_kis-nagy_-_stanley_park.jpg" alt="Stanley park painting"></a>
+            <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Friends at the Pier&lt;/h2&gt;&lt;p&gt;Oil on canvas, 2019.&lt;/p&gt;" href="erzsebet_kis-nagy_-_friends_at_the_pier.jpg" id="paint3b"><img class="painting" src="erzsebet_kis-nagy_-_friends_at_the_pier.jpg" alt="Friends at the Pier painting"></a>
+            <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Climbing&lt;/h2&gt;&lt;p&gt;Oil on canvas, 2019.&lt;/p&gt;" href="erzsebet_kis-nagy_-_climbing.jpg" id="paint3c"><img class="painting" src="erzsebet_kis-nagy_-_climbing.jpg" alt="Climbing painting"></a>
         </section>
         <section id="paint4" class="paintings">
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_warsaw_cityscape.jpg" id="paint4a"><img class="painting" src="erzsebet_kis-nagy_-_warsaw_cityscape.jpg" alt="Warsaw Cityscape painting"></a>
-            <a data-fslightbox="gallery" href="erzsebet_kis-nagy_-_family_pets.jpg" id="paint4b"><img class="painting" src="erzsebet_kis-nagy_-_family_pets.jpg" alt="Family Pets painting"></a>
+            <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Warsaw Cityscape&lt;/h2&gt;&lt;p&gt;Watersoluble coloured pencils on paper, 2018.&lt;/p&gt;" href="erzsebet_kis-nagy_-_warsaw_cityscape.jpg" id="paint4a"><img class="painting" src="erzsebet_kis-nagy_-_warsaw_cityscape.jpg" alt="Warsaw Cityscape painting"></a>
+            <a data-fslightbox="gallery" data-caption="&lt;h2&gt;Family Pets&lt;/h2&gt;&lt;p&gt;Oil on canvas, 2018.&lt;/p&gt;" href="erzsebet_kis-nagy_-_family_pets.jpg" id="paint4b"><img class="painting" src="erzsebet_kis-nagy_-_family_pets.jpg" alt="Family Pets painting"></a>
         </section>
     </main>
     <footer>
@@ -66,6 +68,9 @@
     <div><p id="copyright">© 2020 Erzsebet Kis-Nagy</p></div>
 </footer>
     <script src="fslightbox.js"></script>
+    <script>
+        fsLightboxInstances["gallery"].props.disableThumbs = true;
+    </script>
 </body>
 
 </html>
