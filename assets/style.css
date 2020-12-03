@@ -433,8 +433,14 @@ h4 {
 }
 
 #box1 {
+    padding-bottom: 30px;
+}
+
+#paint5 {
     padding-top: 5px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
 }
 
 #paint1 {
@@ -465,12 +471,12 @@ h4 {
     flex: 1 1 0;
 }
 
-#paint3b, #paint3c, #paint4b {
+#paint3b, #paint3c, #paint4b, #paint5b {
     padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint3b, #paint3c, #paint4b {
+    #paint3b, #paint3c, #paint4b, #paint5b {
         padding-left: 0px;
     }
 }
@@ -506,7 +512,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #paint4 {
+    #paint4, #paint5 {
         flex-direction: column;
     }
 }
@@ -518,6 +524,14 @@ h4 {
 #paint4b {
     flex: 304 304 0;
 }
+ 
+#paint5a {
+    flex: 700 700 0;
+}
+
+#paint5b {
+    flex: 1172 1172 0;
+}
 
 @media only screen and (max-width: 600px) {
     .painting {
@@ -526,7 +540,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #box1, #paint2, #paint3, #paint4 {
+    #box1, #paint2, #paint3, #paint4, #paint5 {
         padding-bottom: 0px;
     }
 }
