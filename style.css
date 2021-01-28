@@ -365,7 +365,7 @@ img {
 #drawings {
     width: 100%;
     height: auto;
-    margin: 0px auto 5px;
+    margin: 0px auto 0px;
 }
 
 .pic img  {
@@ -422,21 +422,31 @@ h4 {
     margin: 30px;
 }
 
-.paintings {
+.paintings, .drawings {
     display: flex;
     flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
-    .paintings {
+    .paintings, .drawings {
         flex-direction: column;
     }
+}
+
+.drawingwtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.drawing {
+    padding: 15px 0px;
 }
 
 #box1 {
     padding-bottom: 30px;
 }
 
-#paint5 {
+#paint5, #drawing1 {
     padding-top: 5px;
     padding-bottom: 30px;
     display: flex;
@@ -531,6 +541,14 @@ h4 {
 
 #paint5b {
     flex: 1172 1172 0;
+}
+
+#drawing1a {
+    flex: 1400 1400 0;
+}
+
+#drawing1b {
+    flex: 1445 1445 0;
 }
 
 @media only screen and (max-width: 600px) {
