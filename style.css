@@ -184,7 +184,7 @@ h2 {
     }
 }
 
-#exhibitionsh2 {
+.exhibitionsh2 {
     padding-bottom: 20px;
 }
 
@@ -286,12 +286,14 @@ table {
 @media only screen and (max-width: 600px) {
     table {
         font-size: 16px;
+        padding-bottom: 10px;
     }
 }
 
 @media only screen and (max-width: 450px) {
     table {
         font-size: 14px;
+        padding-bottom: 10px;
     }
 }
 
@@ -403,6 +405,8 @@ h4 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 14px;
+    text-align: center;
+    line-height: 200%;
 }
 
 @media only screen and (max-width: 600px) {
@@ -439,7 +443,7 @@ h4 {
 }
 
 .drawing {
-    padding: 15px 0px;
+    padding: 0px 0px 15px;
 }
 
 #box1 {
@@ -447,7 +451,6 @@ h4 {
 }
 
 #paint5, #drawing1 {
-    padding-top: 5px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
