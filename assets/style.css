@@ -450,7 +450,7 @@ h4 {
     padding-bottom: 30px;
 }
 
-#paint3, #paint5, #drawing1, #paint6 {
+#paint3, #paint5, #drawing1, #paint6, #paint7, #paint8 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -484,12 +484,12 @@ h4 {
     flex: 1 1 0;
 }
 
-#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c {
+#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b {
     padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c {
+    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b {
         padding-left: 0px;
     }
 }
@@ -519,7 +519,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #paint4, #paint5, #paint6 {
+    #paint4, #paint5, #paint6, #paint7, #paint8 {
         flex-direction: column;
     }
 }
@@ -552,6 +552,22 @@ h4 {
     flex: 339 339 0;
 }
 
+#paint7a {
+    flex: 586 586 0;
+}
+
+#paint7b {
+    flex: 1172 1172 0;
+}
+
+#paint8a {
+    flex: 700 700 0;
+}
+
+#paint8b {
+    flex: 351 351 0;
+}
+
 #drawing1a {
     flex: 1400 1400 0;
 }
@@ -573,7 +589,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #box1, #paint2, #paint3, #paint4, #paint5, #paint6 {
+    #box1, #paint2, #paint3, #paint4, #paint5, #paint6, #paint7, #paint8 {
         padding-bottom: 0px;
     }
 }
