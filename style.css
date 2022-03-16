@@ -13,7 +13,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .nowrap {
@@ -367,11 +367,6 @@ img {
     background-color: black;
 }
 
-#drawings {
-    width: 100%;
-    height: auto;
-    margin: 0px auto 0px;
-}
 
 .pic img  {
     width: 100%;
@@ -387,8 +382,9 @@ h3 {
     font-family: 'Enriqueta', serif;
     font-weight: 500;
     font-size: 22px;
+    text-align: center;
+    padding-top: 10px;
 }
-
 
 @media only screen and (max-width: 600px) {
     h3 {
@@ -425,35 +421,89 @@ h4 {
     }
 }
 
-#paintings {
-    margin: 30px;
+#artworks {
+    background-color: rgb(255, 255, 255, 0.75);
+    width: 100%;
+    padding: 30px 20px 30px 30px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
 }
 
-.paintings, .drawings {
+.artworkmenu {
+    text-transform: uppercase;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: 'Enriqueta', serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+ }
+
+ .artworkmenu.selected {
+     border-bottom: 2px solid black;
+ }
+ 
+ @media only screen and (max-width: 1060px) {
+     .artworkmenu {
+         font-size: 14px;
+         margin-left: 10px;
+         margin-right: 10px;
+     }
+ }
+ 
+ .artwork-items {
+     flex-grow: 1;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ @media only screen and (max-width: 700px) {
+     .artworkmenu {
+         font-size: 12px;
+         margin-left: 10px;
+         margin-right: 10px;
+         padding-top: 0px;
+     }
+     
+     .artwork-items {
+         order: 2;
+         width: 100%;
+         justify-content: center;
+         margin-top: 0px;
+     }
+ }
+
+#paintings, #drawings {
+    margin: 30px 30px 0px;
+}
+
+#drawings {
+    scroll-margin-top: 130px;
+}
+
+#paintings {
+    margin-top: 90px;
+    scroll-margin-top: 200px;
+}
+
+.paintings {
     display: flex;
     flex-direction: row;
 }
 @media only screen and (max-width: 600px) {
-    .paintings, .drawings {
+    .paintings {
         flex-direction: column;
     }
-}
-
-.drawingwtitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.drawing {
-    padding: 0px 0px 15px;
 }
 
 #box1 {
     padding-bottom: 30px;
 }
 
-#paint3, #paint5, #drawing1, #paint6, #paint7, #paint8 {
+#paint3, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
@@ -487,12 +537,12 @@ h4 {
     flex: 1 1 0;
 }
 
-#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b {
+#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b {
     padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b {
+    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b {
         padding-left: 0px;
     }
 }
@@ -518,11 +568,10 @@ h4 {
  #paint4 {
     display: flex;
     flex-direction: row;
-    padding-bottom: 5px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint4, #paint5, #paint6, #paint7, #paint8 {
+    #paint4, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
         flex-direction: column;
     }
 }
@@ -571,11 +620,65 @@ h4 {
     flex: 351 351 0;
 }
 
-#drawing1a {
+.artcategory {
+    padding: 0px 0px 30px;
+    margin: 0px auto;
+    font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.artcategory.hidden {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .artcategory {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .artcategory {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+#draw1a {
     flex: 1400 1400 0;
 }
 
-#drawing1b {
+#draw1b {
+    flex: 1416 1416 0;
+}
+
+#draw2a {
+    flex: 1001 1001 0;
+}
+
+#draw2b {
+    flex: 501 501 0;
+}
+
+#draw3a {
+    flex: 348 348 0;
+}
+ 
+#draw3b {
+    flex: 460 460 0;
+}
+
+#draw3c {
+    flex: 360 360 0;
+}
+
+#draw4a {
+    flex: 1400 1400 0;
+}
+
+#draw4b {
     flex: 1445 1445 0;
 }
 
@@ -585,15 +688,35 @@ h4 {
     }
 }
 
+
 @media only screen and (max-width: 600px) {
-    #paint4bimg {
-        margin-bottom: 5px;
+    #box1, #paint2, #paint3, #paint4, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
+        padding-bottom: 0px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #box1, #paint2, #paint3, #paint4, #paint5, #paint6, #paint7, #paint8 {
+    #paint4bimg {
+        margin-bottom: 0px;
         padding-bottom: 0px;
+    }
+}
+
+
+#cylinders {
+    width: 100%;
+    height: auto;
+    margin: 0px auto 0px;
+    scroll-margin-top: 130px;
+}
+
+@media only screen and (max-width: 700px) {
+    #cylinders, #drawings {
+        scroll-margin-top: 180px;
+    }
+    
+    #paintings {
+        scroll-margin-top: 250px;
     }
 }
 
