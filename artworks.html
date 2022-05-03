@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="Paintings and drawings of artist Erzsebet Kis-Nagy" />
     <meta name="twitter:description" content="A selection of artworks created by artist Erzsebet Kis-Nagy, including oil and acrylic paintings, drawings, and cylindrical artworks." />
     <meta name="twitter:image" content="https://kis-nagy.art/erzsebet_kis-nagy_-_urban_sunset.jpg" />
-    <script async defer data-domain="kis-nagy.art" src="https://pl.kis-nagy.art/js/index.js"></script>
+    <script async defer data-domain="kis-nagy.art" src="https://pl.kis-nagy.art/js/script.hash.js"></script>
 </head>
 
 <body>
@@ -164,6 +164,7 @@
             currentHash = hash;
             if(history.replaceState) {
                 history.replaceState(null, null, '#' + hash);
+                window.dispatchEvent(new HashChangeEvent('hashchange'));
             }
         }
 
