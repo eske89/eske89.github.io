@@ -499,18 +499,23 @@ h4 {
     }
 }
 
-#paint3, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
+#paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
 }
 
-#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
+#paint3 {
+    display: flex;
+    flex-direction: row;
+}
+
+#paint3b, #paint3c, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
     padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
+    #paint3b, #paint3c, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
         padding-left: 0px;
     }
 }
@@ -533,25 +538,12 @@ h4 {
     }
 }
 
- #paint4 {
-    display: flex;
-    flex-direction: row;
-}
-
 @media only screen and (max-width: 600px) {
-    #paint4, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
+    #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
         flex-direction: column;
     }
 }
 
-#paint4a {
-    flex: 268 268 0;
-}
- 
-#paint4b {
-    flex: 304 304 0;
-}
- 
 #paint5a {
     flex: 700 700 0;
 }
@@ -698,13 +690,13 @@ h4 {
 
 
 @media only screen and (max-width: 600px) {
-    #paint3, #paint4, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
+    #paint3, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
         padding-bottom: 0px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    #paint4bimg {
+    #paint3cimg {
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
