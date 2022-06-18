@@ -499,50 +499,18 @@ h4 {
     }
 }
 
-#box1 {
-    padding-bottom: 30px;
-}
-
-#paint3, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
+#paint3, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
 }
 
-#paint1 {
-    width: 62%;
-}
-
-@media only screen and (max-width: 600px) {
-    #paint1 {
-        width: 100%;
-    }
-}
-
-#paint2 {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
-    justify-content: space-between;
-    margin-left: 30px;
-}
-
-@media only screen and (max-width: 600px) {
-    #paint2 {
-        margin-left: 0;
-    }
-}
-
-#paint2 .painting {
-    flex: 1 1 0;
-}
-
-#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b {
+#paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
     padding-left: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b {
+    #paint3b, #paint3c, #paint4b, #paint5b, #paint6b, #paint6c, #paint7b, #paint8b, #paint9b, #paint10b, #paint11b, #paint11c, #draw1b, #draw2a, #draw3b, #draw3c, #draw4b, #draw5b, #draw5c {
         padding-left: 0px;
     }
 }
@@ -571,7 +539,7 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
-    #paint4, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
+    #paint4, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
         flex-direction: column;
     }
 }
@@ -617,6 +585,34 @@ h4 {
 }
 
 #paint8b {
+    flex: 351 351 0;
+}
+
+#paint9a {
+    flex: 664 664 0;
+}
+
+#paint9b {
+    flex: 351 351 0;
+}
+
+#paint10a {
+    flex: 508 508 0;
+}
+
+#paint10b {
+    flex: 351 351 0;
+}
+
+#paint11a {
+    flex: 351 351 0;
+}
+
+#paint11b {
+    flex: 352 352 0;
+}
+
+#paint11c {
     flex: 351 351 0;
 }
 
@@ -682,6 +678,18 @@ h4 {
     flex: 1445 1445 0;
 }
 
+#draw5a {
+    flex: 350 350 0;
+}
+ 
+#draw5b {
+    flex: 346 346 0;
+}
+
+#draw5c {
+    flex: 351 351 0;
+}
+
 @media only screen and (max-width: 600px) {
     .painting {
         margin-bottom: 30px;
@@ -690,7 +698,7 @@ h4 {
 
 
 @media only screen and (max-width: 600px) {
-    #box1, #paint2, #paint3, #paint4, #paint5, #paint6, #paint7, #paint8, #draw1, #draw2, #draw3, #draw4 {
+    #paint3, #paint4, #paint5, #paint6, #paint7, #paint8, #paint9, #paint10, #paint11, #draw1, #draw2, #draw3, #draw4, #draw5 {
         padding-bottom: 0px;
     }
 }
