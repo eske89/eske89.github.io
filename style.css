@@ -436,7 +436,7 @@ h4 {
     margin-left: 15px;
     margin-right: 15px;
     font-size: 18px;
-    font-family: 'Enriqueta', serif;
+    font-family: 'Enriqueta', serif !important;
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -718,12 +718,28 @@ h4 {
     #paintings {
         scroll-margin-top: 250px;
     }
+    #drawings {
+        margin-top: 0px;
+    }
 }
 
 .contact {
     margin-top: 50px;
     margin-bottom: 0px;
     margin-left: 30px;
+    padding: 0px;
+    font-family: 'Enriqueta', serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.contactposts {
+    margin-top: 36px;
+    margin-bottom: 10px;
+    margin-left: 12px;
     padding: 0px;
     font-family: 'Enriqueta', serif;
     font-weight: 500;
@@ -751,6 +767,14 @@ h4 {
     width: 40px;
     margin-left: 40px;
     margin-top: 54px;
+
+}
+
+.mastodon {
+    height: 40px;
+    margin-left: 30px;
+    margin-top: 54px;
+    margin-bottom: 10px;
 
 }
 
@@ -784,10 +808,11 @@ h4 {
     align-items: center;
 }
 
-.tweets {
-    padding-top: 40px;
-    padding-right: 40px;
-    flex: 1 1 0; height: calc(100vh - 160px); overflow-y: scroll
+.toots {
+    font-family: 'Enriqueta', serif;
+    flex: 1 1 0;
+    overflow: hidden;
+    min-height: 500px;
 }
 
 #contact {
@@ -800,10 +825,14 @@ h4 {
         display: block;
     }
 
-    .tweets {
+    .toots {
         height: auto;
         overflow: auto;
+        margin-left: -1rem;
         padding: 30px;
+        border-top: 1px solid #ccc;
+        padding-top: 0;
+        margin-top: 50px;
     }
 }
 

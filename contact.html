@@ -23,8 +23,9 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#243038">
+  <link rel="stylesheet" href="mastodon-timeline.min.css" />
   <script defer data-domain="kis-nagy.art" data-api="https://kis-nagy.erzsebet6401.workers.dev/art/event" src="https://kis-nagy.erzsebet6401.workers.dev/art/script.js"></script>
-
+  <script src="mastodon-timeline.min.js"></script>  
 </head>
 <body>
     <header>
@@ -52,11 +53,18 @@
                     <div class="contactline"><img class="contacticon" src="instagram2.svg" alt="instagram">
                     <a href="https://www.instagram.com/kisnagy_art/"  target="_blank" class="contact">instagram.com/kisnagy_art</a></div>
                     <div class="contactline"><img class="contacticon" src="twitter2.svg" alt="twitter">
-                    <a href="https://twitter.com/kisnagy_art" target="_blank" class="contact">twitter.com/kisnagy_art</a></div>                
+                    <a href="https://twitter.com/kisnagy_art" target="_blank" class="contact">twitter.com/kisnagy_art</a></div>
+                    <div class="contactline"><img class="contacticon" src="mastodon-logo-black.svg" alt="mastodon">
+                    <a href="https://mastodon.art/@kisnagy_art" target="_blank" class="contact">mastodon.art/@kisnagy_art</a></div>
             </div>
-            <div class="tweets">
-                <a class="twitter-timeline" href="https://twitter.com/kisnagy_art?ref_src=twsrc%5Etfw">Tweets by kisnagy_art</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>     
+            <div class="toots">
+                <div class="contactline"><img class="mastodon" src="wordmark-black-text.svg" alt="mastodon"><a class="contactposts">posts</a></div>
+                <div class="mt-timeline">
+                    <div id="mt-body" class="mt-body" role="feed">
+                        <div class="loading-spinner"></div>
+                    </div>
+                </div>  
+            </div>             
         </div>
     </main>
     <footer>
