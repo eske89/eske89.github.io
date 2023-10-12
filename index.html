@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="https://kis-nagy.art/erzsebet_kis-nagy_-_lights_on_the_hillside.jpg" />
   <link rel="me" href="https://mastodon.art/@kisnagy_art" />
   @@include('./partials/favicon.html')
-  <script defer data-domain="kis-nagy.art" data-api="https://kis-nagy.erzsebet6401.workers.dev/art/event" src="https://kis-nagy.erzsebet6401.workers.dev/art/script.js"></script>
+  <script defer data-domain="kis-nagy.art" data-api="https://kis-nagy.erzsebet6401.workers.dev/art/event" src="https://kis-nagy.erzsebet6401.workers.dev/art/script.hash.js"></script>
 </head>
 <body>
     @@include('./partials/header.html')
@@ -129,9 +129,10 @@
                 
                 if (pageYOffset >= sectionTop - menuHeight * 1.2) {
                     current = section.getAttribute("id");
-                    ps(current);
                 }
             });
+
+            ps(current);
         };
         
         window.onscroll = () => refreshSection();
