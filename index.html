@@ -23,7 +23,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#243038">
-  <script defer data-domain="kis-nagy.art" data-api="https://kis-nagy.erzsebet6401.workers.dev/art/event" src="https://kis-nagy.erzsebet6401.workers.dev/art/script.js"></script>
+  <script defer data-domain="kis-nagy.art" data-api="https://kis-nagy.erzsebet6401.workers.dev/art/event" src="https://kis-nagy.erzsebet6401.workers.dev/art/script.hash.js"></script>
 </head>
 <body>
     <header>
@@ -152,9 +152,10 @@
                 
                 if (pageYOffset >= sectionTop - menuHeight * 1.2) {
                     current = section.getAttribute("id");
-                    ps(current);
                 }
             });
+
+            ps(current);
         };
         
         window.onscroll = () => refreshSection();
