@@ -138,7 +138,6 @@
         const sections = document.querySelectorAll(".category-section");
         const menuItems = document.querySelectorAll(".artworkmenu");
         const sectionHeaders = document.querySelectorAll(".artcategory");
-        const menuHeight = document.querySelector('header').offsetHeight + document.querySelector('#artworks').offsetHeight;
 
         let currentHash = null;
         const ps = (hash) => {
@@ -153,6 +152,7 @@
         }
 
         const refreshSection = () => {
+            const menuHeight = document.querySelector('header').offsetHeight + document.querySelector('#artworks').offsetHeight;
             let current = "";
 
             sections.forEach((section) => {

@@ -44,7 +44,15 @@ exports.default = async function() {
   // Init serve files from the build folder
   server.init({
     server: {
-      baseDir: paths.scripts.dest
+      baseDir: paths.scripts.dest,
+      middleware: function(req,res,next) {
+        if (req.url === '/artworks') {
+          req.url = '/artworks.html';
+        } else if (req.url === '/contact') {
+          req.url = '/contact.html';
+        }
+        return next();
+      }
     }
   });
   // Build and reload at the first time
